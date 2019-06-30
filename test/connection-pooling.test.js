@@ -6,7 +6,8 @@ describe("Connection Pooling", async () => {
   })
 
   test("Connection pool size is 50", async () => {
-    const response = await MoviesDAO.getConfiguration()
+    const response = await MoviesDAO.getConfiguration();
+    console.log(response);
     expect(response.poolSize).toBe(50)
   })
 })
